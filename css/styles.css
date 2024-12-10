@@ -23,13 +23,13 @@ img {display: block;}
 
 }
 
-    /* #region Header */x
+    /* #region Header */
 
         .header-page {border-bottom: 1px solid #e7e9fc;}
     .header-container {display: flex;
     justify-content: space-between;
 align-items: center;
-padding: 24px 0;
+padding: 0 15px
 }
         .nav-page {display: flex;
             align-items: center;
@@ -61,6 +61,7 @@ padding: 24px 0;
             justify-content: flex-start;
             flex-direction: row;
             gap: 40px;
+            padding: 24px 0;
         }
     
         .nav-item {font-weight: 500;
