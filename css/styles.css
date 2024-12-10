@@ -31,7 +31,7 @@ img {display: block;}
 align-items: center;
 }
         .nav-page {display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: flex-start;
             flex-direction: row;
             gap: 40px;
@@ -59,7 +59,8 @@ align-items: center;
             align-items: flex-start;
             justify-content: flex-start;
             flex-direction: row;
-            gap: 40px;}
+            gap: 40px;
+        padding: 24px 0}
     
         .nav-item {font-weight: 500;
             font-size: 16px;
@@ -100,8 +101,9 @@ ul .adress-list {list-style-type: none;}
     .section {padding: 120px 0;}
     .section-general {background-color: #2e2f42;
             padding: 188px 0;
-        
+
     }
+   
     .general-page {font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
@@ -120,10 +122,8 @@ ul .adress-list {list-style-type: none;}
         letter-spacing: 0.04em;
         color: #fff;
         background-color: #4d5ae5;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: row;
+        display: block;
+   
         gap: 10px;
         border-radius: 4px;
         padding: 16px 32px;
@@ -132,15 +132,29 @@ ul .adress-list {list-style-type: none;}
         cursor: pointer;
         margin-left: auto;
         margin-right: auto;
+        border: none;
     }
     .general-btn:hover,
     .general-btn:focus {background-color:  #404bbf;}
     /* #endregion */
     /* #region main two */
    .container-skills {}
+                .visually-hidden {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    margin: -1px;
+                    border: 0;
+                    padding: 0;
+                    white-space: nowrap;
+                    clip-path: inset(100%);
+                    clip: rect(0 0 0 0);
+                    overflow: hidden;
+                }
     .skills-list { display: flex;
         justify-content: space-between;
         gap: 24px;
+        flex-basis: calc((100% - 3 * 24px) / 4)
     }
     .skills-item {display: flex;
         align-items: flex-start;
@@ -172,13 +186,14 @@ ul .adress-list {list-style-type: none;}
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
     }
     .lead-container {display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 8px;
+        padding-top: 32px;
     padding-bottom: 32px;}
         
     .team-list {
@@ -209,6 +224,7 @@ ul .adress-list {list-style-type: none;}
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        margin-bottom: 8px;
     }
     .team-leader-text {font-weight: 400;
         font-size: 16px;
@@ -228,12 +244,13 @@ ul .adress-list {list-style-type: none;}
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
     }
     .porfolio-list { display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 24px;
+        row-gap: 48px;
     }
     .portfolio-item {
     }
@@ -256,6 +273,7 @@ ul .adress-list {list-style-type: none;}
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
     }
     .portfolio-item-text {font-weight: 400;
         font-size: 16px;
@@ -267,6 +285,7 @@ ul .adress-list {list-style-type: none;}
 
     /* #region Footer */
     .footer {background-color: #2e2f42;
+        padding: 100px 0;
     }
    
     .logo-foot-style {color: #f4f4fd;
@@ -285,11 +304,8 @@ ul .adress-list {list-style-type: none;}
         color: #f4f4fd;
 
     }
-    footer .logo {display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 0px;
-        padding-bottom: 16px;;
+    footer .logo {
+        margin-bottom: 16px;
+        display: inline-block;
    }
     /* #endregion */
